@@ -42,6 +42,8 @@ ALTER TABLE character_spell ADD `specMask` TINYINT(3) UNSIGNED NOT NULL DEFAULT 
 -- characters
 ALTER TABLE characters ADD `order` tinyint(4) NULL AFTER grantableLevels;
 ALTER TABLE `characters` ADD COLUMN `creation_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `grantableLevels`;
+ALTER TABLE characters ADD COLUMN extraBonusTalentCount INT(11) UNSIGNED NOT NULL DEFAULT '0';
+
 
 -- character_homebind AC commit: 2e6f6e26da8f01cd67bbb56e0e7aa961ffd5f51f
 ALTER TABLE `character_homebind` ADD COLUMN `posO` FLOAT NOT NULL DEFAULT '0' AFTER `posZ`;
@@ -64,4 +66,6 @@ ALTER TABLE character_aura DROP COLUMN `applyResilience`;
 ALTER TABLE channels DROP COLUMN `bannedList`;
 
 --
+ALTER TABLE corpse DROP PRIMARY KEY;
 ALTER TABLE corpse DROP COLUMN `corpseGuid`;
+ALTER TABLE corpse ADD PRIMARY KEY (`guid`);

@@ -257,3 +257,7 @@ CREATE TABLE IF NOT EXISTS `recovery_item` (
   PRIMARY KEY (`Id`),
   KEY `idx_guid` (`Guid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `profanity_name` (
+  name VARCHAR(12) NOT NULL PRIMARY KEY
+);

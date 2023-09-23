@@ -123,3 +123,19 @@ DROP TABLE IF EXISTS character_fishingsteps;
 DROP TABLE IF EXISTS gm_subsurveys;
 DROP TABLE IF EXISTS respawn;
 DROP TABLE IF EXISTS group_instance;
+
+-- Drop these tables
+DROP TABLE IF EXISTS __spell_ranks;
+DROP TABLE IF EXISTS __del_spell_learn_spell;
+DROP TABLE IF EXISTS __del_talent_rest_ranks;
+DROP TABLE IF EXISTS __del_ability_spell;
+DROP TABLE IF EXISTS __playercreateinfo_spell;
+DROP TABLE IF EXISTS __profession_spell_req_skill;
+DROP TABLE IF EXISTS __del_spells_with_learn_effect;
+DROP TABLE IF EXISTS __profession_skill;
+DROP TABLE IF EXISTS __del_shapeshift_spell;
+DROP TABLE IF EXISTS __del_override_spell;
+DROP TABLE IF EXISTS __profession_spell_req_spell;
+DROP TABLE IF EXISTS __del_talent_pyroblast;
+DROP TABLE IF EXISTS __profession_autolearn;
+DROP TABLE IF EXISTS __del_talent_pyroblast2;
